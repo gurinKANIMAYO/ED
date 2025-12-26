@@ -3,8 +3,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const app = express();
 
-// すべ
-てのリクエストをkanimayo.f5.siにプロキシ
+// すべてのリクエストをkanimayo.f5.siにプロキシ
 app.use('/', createProxyMiddleware({
   target: 'https://anura.pro/',
   changeOrigin: true,
