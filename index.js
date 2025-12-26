@@ -6,7 +6,7 @@ const app = express();
 // すべ
 てのリクエストをkanimayo.f5.siにプロキシ
 app.use('/', createProxyMiddleware({
-  target: 'https://charat.me/dotch/ja',
+  target: 'https://anura.pro/',
   changeOrigin: true,
   ws: true,
   secure: false // 証明書が自己署名などの場合に必要
