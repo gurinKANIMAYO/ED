@@ -5,7 +5,7 @@ const app = express();
 
 // すべてのリクエストをkanimayo.f5.siにプロキシ
 app.use('/', createProxyMiddleware({
-  target: 'https://gointerstellar.app/',
+  target: 'https://www.croxyproxy.com/',
   changeOrigin: true,
   ws: true,
   secure: false // 証明書が自己署名などの場合に必要
